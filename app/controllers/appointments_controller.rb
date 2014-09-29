@@ -1,4 +1,5 @@
 class AppointmentsController < ApplicationController
+<<<<<<< HEAD
   # GET /appointments
   # GET /appointments.json
   def index
@@ -47,4 +48,13 @@ class AppointmentsController < ApplicationController
 
     head :no_content
   end
+=======
+
+  def create
+    @appointment = Appointment.new(params[:appointment])
+    @appointments = Appointment.all
+    @appointment.save
+  end
+
+>>>>>>> 5e410a6b38de9129afd10f00b09dbcc3f0258ccc
 end

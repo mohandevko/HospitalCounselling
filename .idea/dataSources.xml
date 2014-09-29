@@ -1,15 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
   <component name="DataSourceManagerImpl" format="xml" hash="687910414">
     <data-source source="LOCAL" name="Rails HospitalCounselling: development" uuid="148cb454-d09a-4702-b95c-929ee12794fc">
       <driver-ref>mysql</driver-ref>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://127.0.0.1/hospitalcounselling</jdbc-url>
+=======
+  <component name="DataSourceManagerImpl" format="xml" hash="1387704109">
+    <data-source source="LOCAL" name="Rails Hospital-Counselling: development" uuid="4a87e133-b0fd-4abc-8948-29071bbe0bf5">
+      <driver-ref>mysql</driver-ref>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://127.0.0.1/hospital_counselling</jdbc-url>
+>>>>>>> 5e410a6b38de9129afd10f00b09dbcc3f0258ccc
       <user-name>root</user-name>
       <user-password>dfd8dfc5dfc5dfde</user-password>
       <libraries />
     </data-source>
+<<<<<<< HEAD
     <data-source source="LOCAL" name="Rails HospitalCounselling: test" uuid="00831e0b-4641-433f-bf98-14e5e7094e9e">
+=======
+    <data-source source="LOCAL" name="Rails Hospital-Counselling: test" uuid="ecf2c5a1-7738-419c-a8bb-828680ffa84b">
+>>>>>>> 5e410a6b38de9129afd10f00b09dbcc3f0258ccc
       <driver-ref>sqlite.xerial</driver-ref>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db/test.sqlite3</jdbc-url>

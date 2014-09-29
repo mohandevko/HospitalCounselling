@@ -1,4 +1,5 @@
 class PatientsController < ApplicationController
+<<<<<<< HEAD
   # GET /patients
   # GET /patients.json
   def index
@@ -47,4 +48,20 @@ class PatientsController < ApplicationController
 
     head :no_content
   end
+=======
+  def index
+    @patient = Patient.new
+    @doctor = Doctor.new
+    @appointment = Appointment.new
+    @appointments = Appointment.all
+  end
+
+  def create
+    @patient = Patient.new(params[:patient])
+    @appointment = Appointment.new
+    @patient.save
+    render
+  end
+
+>>>>>>> 5e410a6b38de9129afd10f00b09dbcc3f0258ccc
 end

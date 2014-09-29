@@ -9,6 +9,7 @@
 # from scratch. The latter is a flawed and unsustainable approach (the more migrations
 # you'll amass, the slower it'll run and the greater likelihood for issues).
 #
+<<<<<<< HEAD
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema.define(version: 20140928132351) do
@@ -41,6 +42,41 @@ ActiveRecord::Schema.define(version: 20140928132351) do
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
+=======
+# It's strongly recommended to check this file into your version control system.
+
+ActiveRecord::Schema.define(:version => 20140927112615) do
+
+  create_table "appointments", :force => true do |t|
+    t.integer  "doctor_id"
+    t.integer  "patient_id"
+    t.string   "diseases"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "appoitments", :force => true do |t|
+    t.integer  "doctor_id"
+    t.integer  "patient_id"
+    t.string   "diseases"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "doctors", :force => true do |t|
+    t.string   "name"
+    t.integer  "phone_number"
+    t.string   "specialization"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+  end
+
+  create_table "patients", :force => true do |t|
+    t.string   "name"
+    t.integer  "phone_number"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+>>>>>>> 5e410a6b38de9129afd10f00b09dbcc3f0258ccc
   end
 
 end
